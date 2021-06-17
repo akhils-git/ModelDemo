@@ -13,7 +13,6 @@ namespace ModelDemo
         static void Main(string[] args)
         {
             Console.WriteLine(Environment.CurrentDirectory);
-          //Department d=  JsonConvert.DeserializeObject<Department>(File.ReadAllText(@"C:\Users\Akhil\Desktop\studentdata.txt"));
             List<Department> students = JsonConvert.DeserializeObject<List<Department>>(File.ReadAllText(Environment.CurrentDirectory+"\\TestData.txt"));
             Console.ReadKey();
         }
